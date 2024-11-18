@@ -1,0 +1,23 @@
+{
+  "weight_loss": [
+    {"food": "Grilled Chicken Breast", "calories": 165, "protein": 31, "category": "high_protein"},
+    {"food": "Quinoa Bowl", "calories": 220, "protein": 8, "category": "complex_carbs"},
+    {"food": "Greek Yogurt", "calories": 130, "protein": 22, "category": "dairy"},
+    {"food": "Salmon", "calories": 208, "protein": 22, "category": "healthy_fats"},
+    {"food": "Lentil Soup", "calories": 180, "protein": 15, "category": "legumes"}
+  ],
+  "muscle_gain": [
+    {"food": "Protein Smoothie", "calories": 300, "protein": 30, "category": "protein_shake"},
+    {"food": "Steak", "calories": 250, "protein": 26, "category": "high_protein"},
+    {"food": "Sweet Potato", "calories": 180, "protein": 2, "category": "complex_carbs"},
+    {"food": "Eggs", "calories": 155, "protein": 13, "category": "high_protein"},
+    {"food": "Oatmeal", "calories": 150, "protein": 6, "category": "complex_carbs"}
+  ],
+  "maintain": [
+    {"food": "Turkey Sandwich", "calories": 250, "protein": 20, "category": "balanced"},
+    {"food": "Mixed Nuts", "calories": 170, "protein": 6, "category": "healthy_fats"},
+    {"food": "Fruit Salad", "calories": 100, "protein": 1, "category": "fruits"},
+    {"food": "Hummus", "calories": 160, "protein": 8, "category": "legumes"},
+    {"food": "Rice Bowl", "calories": 200, "protein": 4, "category": "grains"}
+  ]
+}

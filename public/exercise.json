@@ -1,0 +1,20 @@
+{
+  "18-30": [
+    {"exercise": "High-Intensity Interval Training", "duration": 30, "intensity": "high"},
+    {"exercise": "Weight Training", "duration": 45, "intensity": "high"},
+    {"exercise": "Running", "duration": 40, "intensity": "high"},
+    {"exercise": "Boxing", "duration": 60, "intensity": "high"}
+  ],
+  "31-50": [
+    {"exercise": "Swimming", "duration": 45, "intensity": "medium"},
+    {"exercise": "Cycling", "duration": 40, "intensity": "medium"},
+    {"exercise": "Yoga", "duration": 60, "intensity": "low"},
+    {"exercise": "Strength Training", "duration": 45, "intensity": "medium"}
+  ],
+  "51-plus": [
+    {"exercise": "Walking", "duration": 30, "intensity": "low"},
+    {"exercise": "Water Aerobics", "duration": 45, "intensity": "low"},
+    {"exercise": "Tai Chi", "duration": 40, "intensity": "low"},
+    {"exercise": "Light Resistance Training", "duration": 30, "intensity": "low"}
+  ]
+}
