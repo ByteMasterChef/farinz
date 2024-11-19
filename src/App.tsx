@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UserForm } from './components/UserForm';
 import { ChatMessage } from './components/ChatMessage';
+import { RecommendationCard } from './components/RecommendationCard';
 import { Dumbbell, Utensils, RotateCcw } from 'lucide-react';
 
 interface UserProfile {
@@ -102,15 +103,16 @@ function App() {
       id: Date.now(),
       text: (
         <div>
-          <p className="font-semibold mb-2">Here are your personalized nutrition recommendations:</p>
-          <div className="grid gap-2">
+          <p className="font-semibold mb-4">Here are your personalized nutrition recommendations:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {recommendations.map((food: any, index: number) => (
-              <div key={index} className="bg-white p-3 rounded-md shadow-sm">
-                <p className="font-medium">{food.food}</p>
-                <p className="text-sm text-gray-600">
-                  Calories: {food.calories} | Protein: {food.protein}g
-                </p>
-              </div>
+              <RecommendationCard
+                key={index}
+                title={food.food}
+                details={`${food.calories} calories | ${food.protein}g protein`}
+                category={food.category}
+                type="nutrition"
+              />
             ))}
           </div>
         </div>
@@ -129,15 +131,15 @@ function App() {
       id: Date.now(),
       text: (
         <div>
-          <p className="font-semibold mb-2">Here are your recommended exercises:</p>
-          <div className="grid gap-2">
+          <p className="font-semibold mb-4">Here are your recommended exercises:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {exercises.map((exercise: any, index: number) => (
-              <div key={index} className="bg-white p-3 rounded-md shadow-sm">
-                <p className="font-medium">{exercise.exercise}</p>
-                <p className="text-sm text-gray-600">
-                  Duration: {exercise.duration} min | Intensity: {exercise.intensity}
-                </p>
-              </div>
+              <RecommendationCard
+                key={index}
+                title={exercise.exercise}
+                details={`Duration: ${exercise.duration} min | Intensity: ${exercise.intensity}`}
+                type="exercise"
+              />
             ))}
           </div>
         </div>
@@ -165,6 +167,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <div className="header-text"> 
+        <header> 
+          <p> ERA DOC</p>
+          </header>
+          </div>
       <div className="max-w-4xl mx-auto p-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Left sidebar with form */}
